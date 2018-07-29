@@ -52,8 +52,6 @@ $viewRatio.resize()
 window.addEventListener('resize', $viewRatio.resize);
 ```
 
-## 
-
 ## License
 
 [**MIT**](https://github.com/howion/viewRatio/blob/master/LICENSE)
