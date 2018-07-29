@@ -1,6 +1,6 @@
 # viewRatio
 
-Javascript library for browsers to automatically zoom page or element based on pages width.
+Zoom browser window based on window width
 
 ## Usage
 
