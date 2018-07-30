@@ -1,6 +1,6 @@
 # viewRatio
 
-Zoom html elements based on window width
+**0.694 kb** Javascript Lib to Zoom html elements based on window width
 
 ## Usage
 
