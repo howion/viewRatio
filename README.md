@@ -28,7 +28,7 @@ maxWidth  | `Int` `undefined`               | :heavy_check_mark:  | INF
 
 **`.disable()`** Disable viewRatio
 
-**`.scale()`** Zoom Elem
+**`.scale()`** Compute and Process Zoom
 
 #### Example - Zoom Page
 
