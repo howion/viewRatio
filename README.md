@@ -40,10 +40,10 @@ var $viewRatio = viewRatio({
     width: 1920,    // ZOOM WILL BE BASED ON THIS WIDTH
     zoomRatio: 0.5, // ZOOM WILL BE 0.5 SLOWER
     zoomRatio: 2    // ZOOM WILL BE 2x  FASTER
-})
+});
 
 // INITAL ZOOM
-$viewRatio.scale()
+$viewRatio.scale();
 
 // FIRE SCALE EVENT ON WINDOW RESIZE
 window.addEventListener('resize', $viewRatio.scale);
@@ -56,10 +56,10 @@ window.addEventListener('resize', $viewRatio.scale);
 var $viewRatio = viewRatio({
     elem: '.custom-div',
     width: 1920
-})
+});
 
 // INITAL ZOOM
-$viewRatio.scale()
+$viewRatio.scale();
 
 // FIRE SCALE EVENT ON WINDOW RESIZE
 window.addEventListener('resize', $viewRatio.scale);
