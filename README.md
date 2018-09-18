@@ -1,6 +1,6 @@
 # viewRatio
 
-**0.694 kb** Javascript Lib to Zoom html elements based on window width
+**0.833 kb** Javascript Lib to Zoom Page based on window width
 
 ## Usage
 
@@ -14,29 +14,30 @@ Download and include [viewRatio.min.js](https://github.com/howion/viewRatio/blob
 
 Name      | Takes                           | Optional            | Defaults To
 --------- | ------------------------------- | :-----------------: | :---------:
-elem      | `Int` `HTMLElement` `undefined` | :heavy_check_mark:  | `<BODY>`
-width     | `Int`                           | :x:                 | 
+width     | `Int`                           |                     | --
 zoomRatio | `Float` `undefined`             | :heavy_check_mark:  | 1
-minWidth  | `Int` `undefined`               | :heavy_check_mark:  | 0
 maxWidth  | `Int` `undefined`               | :heavy_check_mark:  | INF
+minWidth  | `Int` `undefined`               | :heavy_check_mark:  | 0
 
 #### Methods
 
-> When viewRatio disabled **`.scale()`** won't work
+**`.enable()`** Enables `.scale()` method
 
-**`.enable()`** Enable viewRatio
+**`.disable()`** Disables `.scale()` method
 
-**`.disable()`** Disable viewRatio
+**`.scale()`** Scales based on **choices & winWidth**
 
-**`.scale()`** Compute and Process Zoom
+**`.resetScale()`** Removes scale
 
-#### Example - Zoom Page
+**`.scaleTo( $customRatio )`** Scales to specified ratio
+
+## Example Usage
 
 ```js
 // CREATE VIEW RATIO OBJECT
 var $viewRatio = viewRatio({
-    maxWidth: 1920, // STOP ZOOMING IF WIDTH BIGGER THAN 1920px
-    minWidth: 480,  // STOP ZOOMING IF WIDTH SMALLER THAN 480px
+    maxWidth: 1920, // STOP ZOOMING IF WIDTH IS BIGGER THAN 1920px
+    minWidth: 480,  // STOP ZOOMING IF WIDTH IS SMALLER THAN 480px
     width: 1920,    // ZOOM WILL BE BASED ON THIS WIDTH
     zoomRatio: 0.5, // ZOOM WILL BE 0.5 SLOWER
     zoomRatio: 2    // ZOOM WILL BE 2x  FASTER
@@ -46,23 +47,7 @@ var $viewRatio = viewRatio({
 $viewRatio.scale();
 
 // FIRE SCALE EVENT ON WINDOW RESIZE
-window.addEventListener('resize', $viewRatio.scale);
-```
-
-#### Example - Zoom Specific Element
-
-```js
-// CREATE VIEW RATIO OBJECT
-var $viewRatio = viewRatio({
-    elem: '.custom-div',
-    width: 1920
-});
-
-// INITAL ZOOM
-$viewRatio.scale();
-
-// FIRE SCALE EVENT ON WINDOW RESIZE
-window.addEventListener('resize', $viewRatio.scale);
+window.addEventListener('resize', $viewRatio.scale, false);
 ```
 
 ## License
