@@ -1,4 +1,4 @@
-# viewRatio
+# viewRatio-dev
 
 **0.833 kb** Javascript Lib to Zoom Page based on window width
 
@@ -49,6 +49,15 @@ $viewRatio.scale();
 // FIRE SCALE EVENT ON WINDOW RESIZE
 window.addEventListener('resize', $viewRatio.scale, false);
 ```
+
+## Last Words
+
+First of all making something like this was hard due to cross browser support and it still has some problems so its **in development stage** for now
+.
+#### Known Bugs
+
+* Edge & IE shows scrollbars on both sides
+* Using `fixed` position in scaled element causes element to be not fixed. ( See [Issue](https://bugs.chromium.org/p/chromium/issues/detail?id=20574&desc=2) )
 
 ## License
 
