@@ -1,6 +1,6 @@
 # viewRatio-dev
 
-**0.833 kb** Javascript Lib to Zoom Page based on window width
+**0.833 kb** JS library to zoom page based on window width.
 
 ## Usage
 
